@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo-service
+  description: Servicio demo para mostrar Swagger en Backstage
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-platform
+  providesApis:
+    - demo-api
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: demo-api
+  description: OpenAPI demo para Backstage
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: team-platform
+  definition:
+    $text: ./openapi.yaml
