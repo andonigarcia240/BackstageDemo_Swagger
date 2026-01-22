@@ -29,6 +29,7 @@ metadata:
 spec:
   type: service
   owner: group:default/team-arcade
+  lifecycle: experimental
   system: arcade-platform
   dependsOn:
     - resource:default/mongo-db
@@ -40,6 +41,7 @@ metadata:
 spec:
   type: job
   owner: group:default/team-arcade
+  lifecycle: experimental
   system: arcade-platform
   dependsOn:
     - resource:default/mongo-db
@@ -51,6 +53,7 @@ metadata:
 spec:
   type: job
   owner: group:default/team-arcade
+  lifecycle: experimental
   system: arcade-platform
   dependsOn:
     - resource:default/mongo-db
@@ -62,5 +65,5 @@ metadata:
 spec:
   type: website
   owner: group:default/team-arcade
-  system: arcade-platform
   lifecycle: experimental
+  system: arcade-platform
