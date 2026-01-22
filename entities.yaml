@@ -63,3 +63,4 @@ spec:
   type: website
   owner: group:default/team-arcade
   system: arcade-platform
+  lifecycle: experimental
