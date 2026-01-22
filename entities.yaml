@@ -27,7 +27,7 @@ kind: Component
 metadata:
   name: servidor-web
   annotations:
-    backstage.io/techdocs-ref: value
+    backstage.io/techdocs-ref: dir:techdocs/servidor-web
 spec:
   type: service
   owner: group:default/team-arcade
@@ -41,7 +41,7 @@ kind: Component
 metadata:
   name: seed-games
   annotations:
-    backstage.io/techdocs-ref: value
+    backstage.io/techdocs-ref: dir:techdocs/seed-games
 spec:
   type: job
   owner: group:default/team-arcade
@@ -55,7 +55,7 @@ kind: Component
 metadata:
   name: seed-scores
   annotations:
-    backstage.io/techdocs-ref: value
+    backstage.io/techdocs-ref: dir:techdocs/seed-scores
 spec:
   type: job
   owner: group:default/team-arcade
@@ -69,7 +69,7 @@ kind: Component
 metadata:
   name: pacman
   annotations:
-    backstage.io/techdocs-ref: value
+    backstage.io/techdocs-ref: dir:techdocs/pacman
 spec:
   type: website
   owner: group:default/team-arcade
