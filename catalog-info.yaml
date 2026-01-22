@@ -1,13 +1,25 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: mi-backstage
-  description: An example of a Backstage application.
-  # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
+  name: as-proyecto
+  description: Servicio principal del proyecto AS_Proyecto
+  annotations:
+    github.com/project-slug: andonigarcia240/BackstageDemo_Swagger
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: as-proyecto
+    backstage.io/source-location: url:https://github.com/andonigarcia240/BackstageDemo_Swagger
 spec:
-  type: website
-  owner: andoni@example.com
+  type: service
   lifecycle: experimental
+  owner: user:default/andonigarcia240
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: as-proyecto-entities
+  description: Importa entidades adicionales desde entities.yaml
+spec:
+  type: url
+  targets:
+    - https://raw.githubusercontent.com/andonigarcia240/BackstageDemo_Swagger/main/examples/template/entities.yaml
