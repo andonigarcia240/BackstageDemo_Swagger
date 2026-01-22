@@ -1,0 +1,65 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-arcade
+spec:
+  type: team
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: arcade-platform
+spec:
+  owner: group:default/team-arcade
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: mongo-db
+spec:
+  type: database
+  owner: group:default/team-arcade
+  system: arcade-platform
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: servidor-web
+spec:
+  type: service
+  owner: group:default/team-arcade
+  system: arcade-platform
+  dependsOn:
+    - resource:default/mongo-db
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: seed-games
+spec:
+  type: job
+  owner: group:default/team-arcade
+  system: arcade-platform
+  dependsOn:
+    - resource:default/mongo-db
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: seed-scores
+spec:
+  type: job
+  owner: group:default/team-arcade
+  system: arcade-platform
+  dependsOn:
+    - resource:default/mongo-db
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: pacman
+spec:
+  type: website
+  owner: group:default/team-arcade
+  system: arcade-platform
