@@ -22,4 +22,4 @@ metadata:
 spec:
   type: url
   targets:
-    - https://raw.githubusercontent.com/andonigarcia240/BackstageDemo_Swagger/main/entities.yaml
+    - https://github.com/andonigarcia240/BackstageDemo_Swagger/blob/main/entities.yaml
