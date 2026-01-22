@@ -26,6 +26,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: servidor-web
+  annotations:
+    backstage.io/techdocs-ref: value
 spec:
   type: service
   owner: group:default/team-arcade
@@ -38,6 +40,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: seed-games
+  annotations:
+    backstage.io/techdocs-ref: value
 spec:
   type: job
   owner: group:default/team-arcade
@@ -50,6 +54,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: seed-scores
+  annotations:
+    backstage.io/techdocs-ref: value
 spec:
   type: job
   owner: group:default/team-arcade
@@ -62,6 +68,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: pacman
+  annotations:
+    backstage.io/techdocs-ref: value
 spec:
   type: website
   owner: group:default/team-arcade
