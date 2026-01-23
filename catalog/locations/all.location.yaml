@@ -4,14 +4,14 @@ metadata:
   name: arcade-catalog
 spec:
   targets:
-    - ./groups/team-arcade.group.yaml
-    - ./systems/arcade-platform.system.yaml
-    - ./resources/mongo-db.resource.yaml
+    - ./../groups/team-arcade.group.yaml
+    - ./../systems/arcade-platform.system.yaml
+    - ./../resources/mongo-db.resource.yaml
 
-    - ./components/servidor-web.component.yaml
-    - ./components/pacman.component.yaml
-    - ./components/seed-games.job.yaml
-    - ./components/seed-scores.job.yaml
+    - ./../components/servidor-web.component.yaml
+    - ./../components/pacman.component.yaml
+    - ./../components/seed-games.job.yaml
+    - ./../components/seed-scores.job.yaml
 
-    - ./apis/servidor-web.api.yaml
-    - ./apis/pacman.api.yaml
+    - ./../apis/servidor-web.api.yaml
+    - ./../apis/pacman.api.yaml
