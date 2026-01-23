@@ -5,7 +5,7 @@ metadata:
   description: Servicio Pacman (REST)
   annotations:
     backstage.io/source-location: url:https://github.com/andonigarcia240/BackstageDemo_Swagger
-    backstage.io/techdocs-ref: dir:techdocs/pacman
+    backstage.io/techdocs-ref: https://github.com/andonigarcia240/BackstageDemo_Swagger/tree/main/techdocs/pacman
 spec:
   type: service
   lifecycle: production
