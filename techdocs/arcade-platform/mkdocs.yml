@@ -1,6 +1,5 @@
-site_name: seed-scores
+site_name: arcade-platform
 nav:
   - Home: index.md
-  - Runbook: runbook.md
 plugins:
   - techdocs-core

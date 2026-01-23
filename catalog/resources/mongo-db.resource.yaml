@@ -3,6 +3,9 @@ kind: Resource
 metadata:
   name: mongo-db
   description: MongoDB de arcade-platform
+  annotations:
+    backstage.io/source-location: url:https://github.com/andonigarcia240/BackstageDemo_Swagger
+    backstage.io/techdocs-ref: url:https://github.com/andonigarcia240/BackstageDemo_Swagger/tree/main/techdocs/mongo-db
 spec:
   type: database
   owner: team-arcade

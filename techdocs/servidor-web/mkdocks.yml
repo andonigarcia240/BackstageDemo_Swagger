@@ -1,5 +1,6 @@
 site_name: servidor-web
 nav:
   - Home: index.md
+  - Runbook: runbook.md
 plugins:
   - techdocs-core
