@@ -8,4 +8,4 @@ spec:
   lifecycle: production
   owner: team-arcade
   definition:
-    $text: ../apis-specs/pacman/openapi.yaml
+    $text: ./../apis-specs/pacman/openapi.yaml
