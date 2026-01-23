@@ -17,9 +17,8 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: as-proyecto-entities
-  description: Importa entidades adicionales desde entities.yaml
+  name: arcade-root
 spec:
   type: url
   targets:
-    - https://github.com/andonigarcia240/BackstageDemo_Swagger/blob/main/entities.yaml
+    - https://github.com/andonigarcia240/BackstageDemo_Swagger/blob/main/catalog/locations/all.location.yaml

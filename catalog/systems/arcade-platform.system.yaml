@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: arcade-platform
+  description: Sistema arcade con APIs, jobs y DB
+spec:
+  owner: team-arcade

@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: pacman
+  description: Servicio Pacman (REST)
+  annotations:
+    backstage.io/source-location: url:https://github.com/andonigarcia240/BackstageDemo_Swagger
+    backstage.io/techdocs-ref: dir:./docs/pacman
+spec:
+  type: service
+  lifecycle: production
+  owner: team-arcade
+  system: arcade-platform
+
+  providesApis:
+    - pacman-api
+
+  dependsOn:
+    - resource:mongo-db
+    - component:servidor-web

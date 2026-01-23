@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: servidor-web-api
+  description: API REST de servidor-web
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team-arcade
+  definition:
+    $text: ../apis-specs/servidor-web/openapi.yaml
