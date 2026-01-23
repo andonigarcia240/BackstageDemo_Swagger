@@ -5,7 +5,7 @@ metadata:
   description: Backend principal (REST) de la plataforma arcade
   annotations:
     backstage.io/source-location: url:https://github.com/andonigarcia240/BackstageDemo_Swagger
-    backstage.io/techdocs-ref: dir:techdocs/servidor-web
+    backstage.io/techdocs-ref: url:https://github.com/andonigarcia240/BackstageDemo_Swagger/tree/main/techdocs/servidor-web
 spec:
   type: service
   lifecycle: production
